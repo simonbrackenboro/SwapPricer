@@ -1,0 +1,9 @@
+#make json docs
+for I in *.xml; do
+    xsltproc xml-json.xsl $I > $I.json
+done
+
+#load json docs
+for I in *.json; do {
+    ${mongodbbin}/mongoimport --db lchdata --collection fpml --type json --file $I &
+} ; done

@@ -1,0 +1,10 @@
+<ivy-module version="1.0">
+    <info organisation="formicary" module="SwapPricer"/>
+    <dependencies>
+        <dependency org="commons-primitives" name="commons-primitives" rev="1.0"/>
+        <dependency org="org.testng" name="testng" rev="6.1.1"/>
+        <dependency org="org.mongodb" name="mongo-java-driver" rev="2.6.5"/>
+        <dependency org="org.slf4j" name="jcl-over-slf4j" rev="1.6.1"/>
+        <dependency org="ch.qos.logback" name="logback-classic" rev="0.9.27"/>
+    </dependencies>
+</ivy-module>
